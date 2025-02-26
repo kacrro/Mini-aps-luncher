@@ -1,22 +1,22 @@
-import PySimpleGUI as sg
+import PySimpleGUI as Sg
 
 def calculator_window():
     layout = [
-        [sg.Input(key="display", disabled=True, font=("Helvetica", 20), justification="right", size=(13,1))],
-        [sg.Button("7", size=(4, 2)), sg.Button("8", size=(4, 2)), sg.Button("9", size=(4, 2)), sg.Button("/", size=(5, 2))],
-        [sg.Button("4", size=(4, 2)), sg.Button("5", size=(4, 2)), sg.Button("6", size=(4, 2)), sg.Button("*", size=(5, 2))],
-        [sg.Button("1", size=(4, 2)), sg.Button("2", size=(4, 2)), sg.Button("3", size=(4, 2)), sg.Button("-", size=(5, 2))],
-        [sg.Button(".", size=(4, 2)), sg.Button("0", size=(4, 2)), sg.Button("=", size=(4, 2)), sg.Button("+", size=(5, 2))],
-        [sg.Button("Clear", size=(8, 1)),sg.Push(),sg.Button("exit", size=(8, 1))],
+        [Sg.Input(key="display", disabled=True, font=("Helvetica", 20), justification="right", size=(13, 1))],
+        [Sg.Button("7", size=(4, 2)), Sg.Button("8", size=(4, 2)), Sg.Button("9", size=(4, 2)), Sg.Button("/", size=(5, 2))],
+        [Sg.Button("4", size=(4, 2)), Sg.Button("5", size=(4, 2)), Sg.Button("6", size=(4, 2)), Sg.Button("*", size=(5, 2))],
+        [Sg.Button("1", size=(4, 2)), Sg.Button("2", size=(4, 2)), Sg.Button("3", size=(4, 2)), Sg.Button("-", size=(5, 2))],
+        [Sg.Button(".", size=(4, 2)), Sg.Button("0", size=(4, 2)), Sg.Button("=", size=(4, 2)), Sg.Button("+", size=(5, 2))],
+        [Sg.Button("Clear", size=(8, 1)), Sg.Push(), Sg.Button("Back", size=(8, 1))],
     ]
-    window_calc = sg.Window('Calculator', layout)
+    window_calc = Sg.Window('Calculator', layout)
     current_display= ""
 
     while True:
         event, values = window_calc.Read()
 
         #close event
-        if event in (sg.WINDOW_CLOSED, "exit"):
+        if event in (Sg.WINDOW_CLOSED, "Back"):
             break
 
         #make it clear
@@ -36,4 +36,4 @@ def calculator_window():
             current_display += event
             window_calc["display"].update(value=current_display)
 
-calculator_window()
+    window_calc.close()
