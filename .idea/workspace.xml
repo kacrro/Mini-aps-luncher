@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e21f54-3500-4b27-9970-92611baac60d" name="Changes" comment="- Calculator gui and logic implementation&#10;- add packages for all planed apps">
-      <change afterPath="$PROJECT_DIR$/converter/gui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr_code/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr_code/gui.py" afterDir="false" />
+    <list default="true" id="11e21f54-3500-4b27-9970-92611baac60d" name="Changes" comment="- converter done&#10;- calculator done&#10;- qr code generator done&#10;- Setting theme done&#10;- menu of miniaps done">
+      <change afterPath="$PROJECT_DIR$/welcome_page/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/welcome_page/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mini_aps_menu/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/mini_aps_menu/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr_code/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/qr_code/gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,7 @@
   "keyToString": {
     "Python.gui (1).executor": "Run",
     "Python.gui (2).executor": "Run",
+    "Python.gui (3).executor": "Run",
     "Python.gui.executor": "Run",
     "Python.menu.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -72,7 +73,7 @@
       <recent name="E:\Python\Mini-aps-luncher" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.menu">
+  <component name="RunManager" selected="Python.gui (3)">
     <configuration name="gui (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mini-aps-luncher" />
       <option name="ENV_FILES" value="" />
@@ -111,6 +112,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qr_code/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gui (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Mini-aps-luncher" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/welcome_page" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/welcome_page/gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,6 +191,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gui (3)" />
         <item itemvalue="Python.menu" />
         <item itemvalue="Python.gui (2)" />
         <item itemvalue="Python.gui (1)" />
@@ -191,7 +216,8 @@
       <option name="presentableId" value="Default" />
       <updated>1740508717154</updated>
       <workItem from="1740508718523" duration="4210000" />
-      <workItem from="1740526257344" duration="5087000" />
+      <workItem from="1740526257344" duration="5510000" />
+      <workItem from="1740557406360" duration="2560000" />
     </task>
     <task id="LOCAL-00001" summary="- Calculator gui and logic implementation&#10;- add packages for all planed apps">
       <option name="closed" value="true" />
@@ -201,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740513772583</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- converter done&#10;- calculator done&#10;- qr code generator done&#10;- Setting theme done&#10;- menu of miniaps done">
+      <option name="closed" value="true" />
+      <created>1740531749000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740531749000</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,10 +243,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Calculator gui and logic implementation&#10;- add packages for all planed apps" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Calculator gui and logic implementation&#10;- add packages for all planed apps" />
+    <MESSAGE value="- converter done&#10;- calculator done&#10;- qr code generator done&#10;- Setting theme done&#10;- menu of miniaps done" />
+    <option name="LAST_COMMIT_MESSAGE" value="- converter done&#10;- calculator done&#10;- qr code generator done&#10;- Setting theme done&#10;- menu of miniaps done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mini_aps_luncher$menu.coverage" NAME="menu Coverage Results" MODIFIED="1740529224704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/menu" />
+    <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__3_.coverage" NAME="gui (3) Coverage Results" MODIFIED="1740559984010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/welcome_page" />
+    <SUITE FILE_PATH="coverage/Mini_aps_luncher$menu.coverage" NAME="menu Coverage Results" MODIFIED="1740557510806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/menu" />
     <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__1_.coverage" NAME="gui (1) Coverage Results" MODIFIED="1740529125459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/converter" />
     <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui.coverage" NAME="gui Coverage Results" MODIFIED="1740527375583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/calculator" />
     <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__2_.coverage" NAME="gui (2) Coverage Results" MODIFIED="1740531389080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qr_code" />

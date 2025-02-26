@@ -4,7 +4,7 @@ from converter.gui import converter_window
 from qr_code.gui import qr_window
 
 def main_menu():
-    Sg.theme('DarkGrey2')
+    # Sg.theme('DarkGrey2')
     layout = [
         [Sg.Button("Calculator", size=(20, 1))],
         [Sg.Button("Converter", size=(20, 1))],
@@ -34,6 +34,9 @@ def main_menu():
             qr_window()
             window_menu.un_hide()
 
-main_menu()
+    window_menu.close()
+
+
+# main_menu()
 
 

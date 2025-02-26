@@ -55,5 +55,3 @@ def qr_window():
                 Sg.popup("File has been saved successfully!")
 
     window_qr.close()
-
-
