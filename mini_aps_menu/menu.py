@@ -2,6 +2,7 @@ import PySimpleGUI as Sg
 from calculator.gui import calculator_window
 from converter.gui import converter_window
 from qr_code.gui import qr_window
+from Hate_detect.gui import Hate_window
 
 def main_menu():
     # Sg.theme('DarkGrey2')
@@ -9,6 +10,7 @@ def main_menu():
         [Sg.Button("Calculator", size=(20, 1))],
         [Sg.Button("Converter", size=(20, 1))],
         [Sg.Button("Qr code generator", size=(20, 1))],
+        [Sg.Button("Hate detector", size=(20, 1))],
         [Sg.Button("Exit", size=(20, 1))]
 
     ]
@@ -27,6 +29,11 @@ def main_menu():
         elif event == "Calculator":
             window_menu.hide()
             calculator_window()
+            window_menu.un_hide()
+
+        elif event == "Hate detector":
+            window_menu.hide()
+            Hate_window()
             window_menu.un_hide()
 
         elif event == "Qr code generator":

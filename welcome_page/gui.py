@@ -16,16 +16,7 @@ def welcome_window():
         [sg.Button('Exit',size=(19,1))],
     ]
 
-    readme_layout = [
-        [sg.Text('Welcome to my aplication')],
-        [sg.Text('It is one of my first full built apps. I made it just for '
-                 'practice codin bc on studies I have never rly learnt codin '
-                 'U could ask why python? - I want to explore AI world python loves AI')],
-        # [sg.Text('practice codin bc on studies I have never rly learnt codin ')],
-        # [sg.Text('U could ask why python? - I want to explore AI world python loves AI')],
-        # [sg.Text('')],
-        # [sg.Text('')],
-    ]
+
 
     window_welcome = sg.Window(' ', layout)
 
@@ -46,6 +37,7 @@ def welcome_window():
             window_welcome.hide()
             readme_window()
             window_welcome.un_hide()
+
 
 
 
