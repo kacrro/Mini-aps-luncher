@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 import webbrowser
 from mini_aps_menu.menu import main_menu
+from Readme.gui import readme_window
 
 def open_github():
     webbrowser.open_new_tab('https://github.com/kacrro')
@@ -42,7 +43,10 @@ def welcome_window():
             open_github()
             sg.Popup('Github opened in ur browser!')
         elif event == 'What am I?':
-            break
+            window_welcome.hide()
+            readme_window()
+            window_welcome.un_hide()
+
 
 
     window_welcome.close()
