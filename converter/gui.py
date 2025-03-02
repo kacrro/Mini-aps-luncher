@@ -5,8 +5,8 @@ def converter_window():
 
     layout = [
         [Sg.Text('Steps and Kilometers Converter', font=("Helvetica", 14)), Sg.Text('(use . in floats)', font=("Helvetica", 9))],
-        [Sg.Text('Amount:'), Sg.InputText(key='amount', size=(35, 1))],
-        [Sg.Button('Km -> Steps'), Sg.Button('Steps -> Km'), Sg.Button('Back')],
+        [Sg.Text('Amount:'), Sg.InputText(key='amount', size=(45, 1))],
+        [Sg.Button('Km -> Steps'), Sg.Button('Steps -> Km'), Sg.Push(),Sg.Button('Back')],
         [Sg.Text('This is '), Sg.Text('0', key='amount_view'), Sg.Text('', key='steps_km_view')]
     ]
 

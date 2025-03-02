@@ -16,10 +16,7 @@ def welcome_window():
         [sg.Button('Exit',size=(19,1))],
     ]
 
-
-
     window_welcome = sg.Window(' ', layout)
-
 
 
     while True:
@@ -37,10 +34,4 @@ def welcome_window():
             window_welcome.hide()
             readme_window()
             window_welcome.un_hide()
-
-
-
-
     window_welcome.close()
-
-welcome_window()

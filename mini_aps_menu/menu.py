@@ -11,7 +11,7 @@ def main_menu():
         [Sg.Button("Converter", size=(20, 1))],
         [Sg.Button("Qr code generator", size=(20, 1))],
         [Sg.Button("Hate detector", size=(20, 1))],
-        [Sg.Button("Exit", size=(20, 1))]
+        [Sg.Button("Back", size=(20, 1))]
 
     ]
 
@@ -19,8 +19,11 @@ def main_menu():
 
     while True:
         event, values = window_menu.read()
-        if event in (Sg.WINDOW_CLOSED, "Exit"):
+        if event in (Sg.WINDOW_CLOSED, "Back"):
             break
+
+
+
         elif event == "Converter":
             window_menu.hide()
             converter_window()
@@ -33,6 +36,7 @@ def main_menu():
 
         elif event == "Hate detector":
             window_menu.hide()
+            Sg.popup_no_wait("Please wait, it can take a moment.")
             Hate_window()
             window_menu.un_hide()
 

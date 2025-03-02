@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e21f54-3500-4b27-9970-92611baac60d" name="Changes" comment="- Readme added">
-      <change afterPath="$PROJECT_DIR$/Hate_detect/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hate_detect/gui.py" afterDir="false" />
+    <list default="true" id="11e21f54-3500-4b27-9970-92611baac60d" name="Changes" comment="- hate detector added">
+      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Readme/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/converter/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_aps_menu/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/mini_aps_menu/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr_code/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/qr_code/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/welcome_page/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/welcome_page/gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +58,9 @@
     "Python.gui (3).executor": "Run",
     "Python.gui (4).executor": "Run",
     "Python.gui.executor": "Run",
+    "Python.menu (1).executor": "Run",
     "Python.menu.executor": "Run",
+    "Python.run.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "E:/Python/Mini-aps-luncher",
@@ -72,7 +77,7 @@
       <recent name="E:\Python\Mini-aps-luncher" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gui (3)">
+  <component name="RunManager" selected="Python.run">
     <configuration name="gui (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mini-aps-luncher" />
       <option name="ENV_FILES" value="" />
@@ -165,7 +170,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mini-aps-luncher" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,12 +179,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/menu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menu/menu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.gui (3)" />
         <item itemvalue="Python.menu (1)" />
         <item itemvalue="Python.gui" />
         <item itemvalue="Python.gui (4)" />
-        <item itemvalue="Python.menu" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +222,9 @@
       <workItem from="1740508718523" duration="4210000" />
       <workItem from="1740526257344" duration="5510000" />
       <workItem from="1740557406360" duration="4519000" />
-      <workItem from="1740769143718" duration="3326000" />
+      <workItem from="1740769143718" duration="4530000" />
+      <workItem from="1740777725739" duration="16000" />
+      <workItem from="1740921111556" duration="2658000" />
     </task>
     <task id="LOCAL-00001" summary="- Calculator gui and logic implementation&#10;- add packages for all planed apps">
       <option name="closed" value="true" />
@@ -251,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740771316576</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- hate detector added">
+      <option name="closed" value="true" />
+      <created>1740772774443</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740772774443</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,14 +277,17 @@
     <MESSAGE value="- converter done&#10;- calculator done&#10;- qr code generator done&#10;- Setting theme done&#10;- menu of miniaps done" />
     <MESSAGE value="- add wellcome page &#10;- add github action" />
     <MESSAGE value="- Readme added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Readme added" />
+    <MESSAGE value="- hate detector added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- hate detector added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__3_.coverage" NAME="gui (3) Coverage Results" MODIFIED="1740771134172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/welcome_page" />
+    <SUITE FILE_PATH="coverage/Mini_aps_luncher$menu__1_.coverage" NAME="menu (1) Coverage Results" MODIFIED="1740772696063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_aps_menu" />
+    <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__3_.coverage" NAME="gui (3) Coverage Results" MODIFIED="1740921571983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/welcome_page" />
     <SUITE FILE_PATH="coverage/Mini_aps_luncher$menu.coverage" NAME="menu Coverage Results" MODIFIED="1740557510806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/menu" />
     <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__1_.coverage" NAME="gui (1) Coverage Results" MODIFIED="1740529125459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/converter" />
+    <SUITE FILE_PATH="coverage/Mini_aps_luncher$run.coverage" NAME="run Coverage Results" MODIFIED="1740923786318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__4_.coverage" NAME="gui (4) Coverage Results" MODIFIED="1740771075491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Readme" />
-    <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui.coverage" NAME="gui Coverage Results" MODIFIED="1740772446635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hate_detect" />
+    <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui.coverage" NAME="gui Coverage Results" MODIFIED="1740772669398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hate_detect" />
     <SUITE FILE_PATH="coverage/Mini_aps_luncher$gui__2_.coverage" NAME="gui (2) Coverage Results" MODIFIED="1740531389080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qr_code" />
   </component>
 </project>

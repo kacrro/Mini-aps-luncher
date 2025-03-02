@@ -20,8 +20,8 @@ def generate_qr_code(data, save_path=None):
 def qr_window():
     layout=[
         [Sg.Text('Write what you want to code as QR:')],
-        [Sg.Multiline(key="input_text", size=(40, 5))],
-        [Sg.Button('Generate'),Sg.Button('Save into file'),Sg.Button('Back')],
+        [Sg.Multiline(key='input_text', size=(40, 5))],
+        [Sg.Button('Generate'),Sg.Button('Save into file', disabled=True, key='saving_button' ), Sg.Push() ,Sg.Button('Back')],
         [Sg.Text('', key='QR_Preview')],
         [Sg.Image(key='QR_Image')],
     ]
@@ -33,6 +33,7 @@ def qr_window():
         if event in (Sg.WIN_CLOSED,"Back"):
             break
         if event == 'Generate':
+            window_qr['saving_button'].update(disabled=False)
             window_qr['QR_Preview'].update('Preview of QR:')
             data = values['input_text'].strip()
             if not data:
@@ -44,7 +45,7 @@ def qr_window():
             qr_img.save(bio, format="png")
             window_qr['QR_Image'].update(data=bio.getvalue())
 
-        elif event == 'Save into file':
+        elif event == 'saving_button':
             if qr_img is None:
                 Sg.popup("Please enter your text!")
                 continue

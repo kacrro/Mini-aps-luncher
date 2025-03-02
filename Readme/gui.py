@@ -3,18 +3,20 @@ import PySimpleGUI as sg
 def readme_window():
 
     layout = [
-        [sg.Text('Witaj w projekcie mini-aps-luncher – to zbiór mini-aplikacji desktopowych, które pozwolą eksplorować Pythona')],
-                [sg.Text('\n Co znajdziesz w projekcie?', font=("Arial Black",10))],
-        [sg.Text('- Converter – przeliczanie jednostek, np. kilometry na kroki.'
-                '\n- Calculator – klasyczny kalkulator z podstawowymi operacjami.'
-                # '\n- Hate Detection – detekcja obraźliwych treści przy użyciu modeli z Hugging Face.'
-                '\n- QR Code Generator – generowanie kodów QR na podstawie wprowadzonego tekstu.')],
-        [sg.Text('\n\n Technologie użyte w projekcie', font=("Arial Black",10))],
-        [sg.Text('- PySimpleGUI – szybkie i proste tworzenie interfejsów graficznych.'
-                '\n- Transformers & Hugging Face – praca z pretrenowanymi modelami NLP.'
-                '\n- qrcode & Pillow – generowanie i przetwarzanie kodów QR.'
-                '\n- Git – kontrola wersji i współpraca, dzięki czemu projekt jest stale rozwijany.'
-                )],
+        [sg.Text(
+            'Welcome to the mini-aps-luncher project – it is a collection of desktop mini-applications that allow you to explore Python')],
+        [sg.Text('\nWhat will you find in the project?', font=("Arial Black", 10))],
+        [sg.Text('- Converter – unit conversion, e.g., kilometers to steps.'
+                 '\n- Calculator – a classic calculator with basic operations.'
+                 '\n- Hate Detection – detecting offensive content using models from Hugging Face.'
+                 '\n- QR Code Generator – generating QR codes based on the entered text.')],
+        [sg.Text('\n\nTechnologies used in the project', font=("Arial Black", 10))],
+        [sg.Text('- PySimpleGUI – fast and easy creation of graphical interfaces.'
+                 '\n- Transformers & Hugging Face – working with pre-trained NLP models.'
+                 '\n- qrcode & Pillow – generating and processing QR codes.'
+                 '\n- Git – version control and collaboration, ensuring the project is constantly evolving.'
+                 )],
+
         [sg.Button('Back')]
     ]
 
